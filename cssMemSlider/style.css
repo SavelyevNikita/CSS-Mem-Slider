@@ -8,22 +8,26 @@
 }
 
 .wrapper {
-    width: 800px;
+    width: 900px;
     height: 100%;
     margin: 0 auto;
+    background: chocolate;
+    padding: 50px;
 }
 
 .window-slider {
+    border-radius: 10px;
     width: 800px;
     height: 100%;
     overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
 }
 
 .slider {
     display: flex;
     width: 500%;
     height: 500px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 
 .slides {
@@ -104,75 +108,6 @@ label {
     transition-duration: 1s;
 }
 
-
-/* .text .slide1,
-.text .slide2,
-.text .slide3,
-.text .slide4,
-.text .slide5 {
-    opacity: 0;
-} */
-
-
-/* #slide1:checked~.slider>.slide1,
-#slide2:checked~.slider>.slide2,
-#slide3:checked~.slider>.slide3,
-#slide4:checked~.slider>.slide4,
-#slide5:checked~.slider>.slide5,
-#slide1:checked~.text>.slide-span1,
-#slide2:checked~.text>.slide-span2,
-#slide3:checked~.text>.slide-span3,
-#slide4:checked~.text>.slide-span4,
-#slide5:checked~.text>.slide-span5 {
-    opacity: 1;
-    z-index: 1;
-    transform: scale(1);
-}
-.wrapper>input {
-    display: none;
-} */
-
-
-/* .wrapper .controls {
-    left: 50%;
-    margin-left: -98px;
-    position: absolute;
-} */
-
-
-/* .wraper-navigation {
-    width: 100%;
-    height: 50px;
+.text {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-.wrapper label {
-    cursor: pointer;
-    display: inline-block;
-    height: 8px;
-    margin: 25px 12px 0 16px;
-    position: relative;
-    width: 8px;
-    border-radius: 50%;
-    transition: background ease-in-out .5s;
-}
-.wrapper label:hover,
-#slide1:checked~.controls label:nth-of-type(1),
-#slide2:checked~.controls label:nth-of-type(2),
-#slide3:checked~.controls label:nth-of-type(3),
-#slide4:checked~.controls label:nth-of-type(4),
-#slide5:checked~.controls label:nth-of-type(5) {
-    background: rgba(163, 10, 10, 0.8);
-}
-.wrapper label:after {
-    border: 2px solid rgb(0, 0, 0);
-    content: " ";
-    display: block;
-    height: 12px;
-    left: -4px;
-    /* position: absolute; 
-    top: -4px;
-    width: 12px;
-    border-radius: 50%;
-} */
